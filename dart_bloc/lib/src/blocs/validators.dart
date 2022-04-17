@@ -9,7 +9,7 @@ class Validators {
       sink.addError('Enter a valid email');
     }
   });
-  //for commit
+
   final validatePassword = StreamTransformer<String, String>.fromHandlers(
       handleData: (password, sink) {
     if (password.length > 3) {
