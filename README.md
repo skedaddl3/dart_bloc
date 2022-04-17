@@ -1,6 +1,6 @@
 ## Content
 
-This repository contains Section 13 of Dart & Flutter Course: Flutter Architecture BLOC Pattern
+This repository contains Section 14 of Dart & Flutter Course: Flutter Architecture BLOC Pattern
 
 #### Section 14
 - BLOCS vs Stateful 
