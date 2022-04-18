@@ -1,6 +1,6 @@
 ## Content
 
-This repository contains Section 14 of Dart & Flutter Course: Flutter Architecture BLOC Pattern
+This repository contains Section 14 & 15 of Dart & Flutter Course: Flutter Architecture BLOC Pattern & Consuming Bloc Data
 
 #### Section 14
 
