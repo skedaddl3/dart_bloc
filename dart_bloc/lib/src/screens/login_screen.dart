@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import '../blocs/bloc.dart';
 
+// ignore: use_key_in_widget_constructors
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(context) {
     return Container(
@@ -19,23 +19,34 @@ class LoginScreen extends StatelessWidget {
   }
 
   Widget emailField() {
-    return const TextField(
-      keyboardType: TextInputType.emailAddress,
-      decoration: InputDecoration(
-        hintText: 'you@example.com',
-        labelText: 'Email Address',
-        errorText: 'Invalid Email',
-      ),
-    );
+    return StreamBuilder(
+        stream: bloc.email,
+        builder: (context, snapshot) {
+          return TextField(
+            onChanged: bloc.changeEmail,
+            keyboardType: TextInputType.emailAddress,
+            decoration: InputDecoration(
+              hintText: 'you@example.com',
+              labelText: 'Email Address',
+              errorText: "${snapshot.error}",
+            ),
+          );
+        });
   }
 
   Widget passwordField() {
-    return const TextField(
-      decoration: InputDecoration(
-        hintText: 'Password',
-        labelText: 'Password',
-      ),
-    );
+    return StreamBuilder(
+        stream: bloc.password,
+        builder: (context, snapshot) {
+          return TextField(
+              onChanged: bloc.changePassword,
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: 'Password',
+                labelText: 'Password',
+                errorText: "${snapshot.error}",
+              ));
+        });
   }
 
   Widget submitButton() {
