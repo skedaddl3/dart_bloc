@@ -20,5 +20,3 @@ This repository contains Section 14 & 15 of Dart & Flutter Course: Flutter Archi
 - Accessing Bloc
 - Form Submission
 - Stream Merging Possibilities
-
-test
