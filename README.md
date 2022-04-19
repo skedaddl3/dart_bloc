@@ -1,6 +1,7 @@
 ## Content
 
-This repository contains Section 14 & 15 of Dart & Flutter Course: Flutter Architecture BLOC Pattern & Consuming Bloc Data
+This repository contains Section 14,15,16 of Dart & Flutter Course: Flutter Architecture BLOC Pattern,
+Consuming Bloc Data and RxDart for Reactive Programming
 
 #### Section 14
 
@@ -20,3 +21,5 @@ This repository contains Section 14 & 15 of Dart & Flutter Course: Flutter Archi
 - Accessing Bloc
 - Form Submission
 - Stream Merging Possibilities
+
+#### Section 16
